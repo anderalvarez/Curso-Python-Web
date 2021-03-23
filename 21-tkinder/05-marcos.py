@@ -15,13 +15,22 @@ marco.config(
     relief="solid"
 )
 marco.pack(side=RIGHT, anchor=NE)
+marco.pack_propagate(False)
 
-marco = Frame(ventana, width=200, height=200)
-marco.config(
-    bg="green",
-    bd=5,
-    relief="solid"
+texto = Label(marco, text="Primer marco")
+texto.config(
+    bg="orange"
 )
-marco.pack(side=RIGHT, anchor=SE)
+texto.pack()
+
+
+
+# marco = Frame(ventana, width=200, height=200)
+# marco.config(
+#     bg="green",
+#     bd=5,
+#     relief="solid"
+# )
+# marco.pack(side=RIGHT, anchor=SE)
 
 ventana.mainloop()
